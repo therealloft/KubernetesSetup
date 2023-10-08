@@ -6,7 +6,11 @@ The install assumes you already have docker installed on your server
 
 ```
 wget https://raw.githubusercontent.com/therealloft/KubernetesSetup/main/Setup.sh
+```
+```
 chmod +x Setup.sh
+```
+```
 ./Setup.sh
 ```
 
