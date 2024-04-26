@@ -14,6 +14,9 @@ done
 if [ "$control_node" = "no" ]; then
     read -p "Please provide the join string printed from your control-node: " join_str
 fi
+apt install sudo
+sudo apt-get update
+sudo apt-get install -y apt-transport-https apt-transport ca-certificates curl
 
 wget https://go.dev/dl/go1.21.2.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.21.2.linux-amd64.tar.gz
